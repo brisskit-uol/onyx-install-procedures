@@ -1,0 +1,19 @@
+#===============================================================================#
+#  Command line tools for installing the Onyx web application                   #
+#===============================================================================#
+
+Inspect the POM.
+================
+
+There is a production profile and a development profile.
+The build is production by default.
+Look at the enironment.type property setting, 
+which is used to produce two artifacts (development and production versions)... 
+
+To build a production artifact, the default install invocation is sufficient...
+mvn clean install
+
+To build a development artifact...
+mvn clean install -Denvironment.type=development
+
+To deploy to the remote BRISSKit repos, replace "install" with "deploy" in the above.

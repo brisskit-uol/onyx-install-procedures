@@ -1,0 +1,39 @@
+<destinations>
+
+  <destination>
+    <name>Brisskit</name>
+    
+     <!-- options>
+      <format>XML</format>
+	  <useEnrollmentId>true</useEnrollmentId>
+    </options  -->
+    
+    <valueset entityType="Participant" valueTable="Participants">
+      <entities>
+        <excludeAll />
+        <script type="INCLUDE">
+          <javascript><![CDATA[// Include any ValueSet that has 'CLOSED' or 'COMPLETED' as a value for the 'Participant.Interview.Status' variable
+          $('Participants:Admin.Interview.status').any('CLOSED','COMPLETED')]]></javascript>
+        </script>
+        <script type="EXCLUDE">
+          <javascript><![CDATA[$('Participants:Admin.Interview.exportLog.destination').any('Brisskit.Participants')]]></javascript>
+        </script>
+      </entities>
+    </valueset>
+    
+	<valueset entityType="Participant" valueTable="RiskFactorQuestionnaire">
+      <entities>
+        <excludeAll />
+        <script type="INCLUDE">
+          <javascript><![CDATA[// Include any ValueSet that has 'CLOSED' or 'COMPLETED' as a value for the 'Participant.Interview.Status' variable
+          $('Participants:Admin.Interview.status').any('CLOSED','COMPLETED')]]></javascript>
+        </script>
+        <script type="EXCLUDE">
+          <javascript><![CDATA[$('Participants:Admin.Interview.exportLog.destination').any('Brisskit.RiskFactorQuestionnaire')]]></javascript>
+        </script>
+      </entities>		  
+    </valueset>
+
+  </destination>
+    
+</destinations>

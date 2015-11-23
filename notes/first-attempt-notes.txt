@@ -1,0 +1,47 @@
+get install procedures: 
+==========================
+wget http://data.briccs.org.uk/onyx/onyx-install-1.0-development.zip
+
+installed zip and unzip:
+==============================
+sudo apt-get install zip
+sudo apt-get install unzip
+
+unzip the install procedures.
+=================================
+unzip onyx-install-1.0-development.zip
+
+change permissions to be a bit more restrictive.
+==================================================
+chmod -R o-rwx onyx-install-1.0-development
+
+examine and edit the config files!!!
+=======================================
+remember this in particular...
+ONYX_INSTALL_PROCS_HOME=/home/jl99/onyx-install-1.0-development
+
+acquire the artifacts:
+==========================
+sudo ./1-acquisitions.sh 20120516
+
+install the jdk:
+====================
+sudo ./2-install-jdk.sh 20120516
+
+install mysql: 
+====================
+(this worked but the setup is rather fancy considering we did not need the work or job name or job log)
+sudo ./3-install-mysql.sh 20120516
+
+install tomcat:
+=================
+sudo ./4-install-tomcat.sh 20120516
+
+install onyx:
+================
+sudo ./5-install-onyx.sh 20120516
+
+server startup failed. Could not connect to onyx database.
+I'm trying to create it manually then retry.
+This worked!!!
+

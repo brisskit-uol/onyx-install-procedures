@@ -1,0 +1,7 @@
+#
+# Copy some build/config files to required locations 
+# with substitution variables from the defaults config...
+merge_config $I2B2_INSTALL_HOME/config/config.properties \
+             $I2B2_INSTALL_HOME/config/$DB_TYPE/pm-cell/common-build.properties \
+             $WORK_DIR/$SOURCE_DIRECTORY/edu.harvard.i2b2.common/build.properties
+exit_if_bad $? "Failed to merge properties into $WORK_DIR/$SOURCE_DIRECTORY/edu.harvard.i2b2.common/build.properties" $LOG_FILE   

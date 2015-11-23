@@ -1,0 +1,20 @@
+#===============================================================================#
+#  Command line tools for installing the Onyx web aplication                    #
+#===============================================================================#
+
+QUICK START.
+============
+
+1. Unzip this package into the standard BRISSKit install directory 
+   (ie: to /var/local/brisskit/onyx)
+2. Edit the set.sh file within the brisskit bin/global directory of the install package.
+   'Source' the set.sh file at the start of any shell session.
+   (There should be no need to do this as sudo or root)
+   Use "source ./set.sh" or ". ./set.sh" at the command line or within a composition script.
+   Remember, if you execute any script as sudo, then you must inherit the environment variables; eg:
+   > sudo -E ./0-prerequisites.sh job-20130214
+   (The 7-install-onyx-procedures.sh is one that must be executed as sudo as it installs a cron job)
+3  Review configuration settings within the config directory.
+   DO NOT forget the cron-params which must contain a correct absolute path.
+4. The order of completion is by number within the procedures/bin/installs directory
+   Alternatively, use the composed script ONYX_INSTALL_PROCS_HOME/compositions/install-all.sh 
