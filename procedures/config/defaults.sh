@@ -20,16 +20,16 @@ export ACQUISITIONS_DIRECTORY=acquisitions
 
 # We need a user and password for wget to maven repo
 export MVN_READONLY_USER=readonly
-export MVN_READONLY_PASSWORD=readonly.....
+export MVN_READONLY_PASSWORD=readonly...
 
 # Download paths of installable artifacts... 
 
-export JDK_DOWNLOAD_PATH=http://maven.brisskit.le.ac.uk/nexus/content/repositories/thirdparty/oracle/jdk/jdk/6u39-linux/jdk-6u39-linux-x64.bin
-export ANT_DOWNLOAD_PATH=http://maven.brisskit.le.ac.uk/nexus/content/repositories/thirdparty/apache/ant/apache-ant/1.8.4/apache-ant-1.8.4-bin.zip
-export TOMCAT_DOWNLOAD_PATH=http://maven.brisskit.le.ac.uk/nexus/content/repositories/thirdparty/apache/tomcat/apache-tomcat/6.0.35/apache-tomcat-6.0.35.zip
-export ONYX_DOWNLOAD_PATH=http://maven.brisskit.le.ac.uk/nexus/content/repositories/thirdparty/onyx/brisskit-onyx-demo/1.8.1/brisskit-onyx-demo-1.8.1-apptlistfix.war
-export ONYX_INTEGRATION_WS_DOWNLOAD_PATH=http://maven.brisskit.le.ac.uk/nexus/content/repositories/releases/org/brisskit/app/onyx/onyxWS/1.0-RC1/onyxWS-1.0-RC1.war
-export ONYX_PROCEDURES_DOWNLOAD_PATH=http://maven.brisskit.le.ac.uk/nexus/content/repositories/releases/org/brisskit/app/onyx/onyx-admin-procedures/1.0-RC1-development/onyx-admin-procedures-1.0-RC1-development.zip
+export JDK_DOWNLOAD_PATH=https://maven.brisskit.le.ac.uk:443/nexus/content/repositories/thirdparty/oracle/jdk/jdk/6u39-linux/jdk-6u39-linux-x64.bin
+export ANT_DOWNLOAD_PATH=https://maven.brisskit.le.ac.uk:443/nexus/content/repositories/thirdparty/apache/ant/apache-ant/1.8.4/apache-ant-1.8.4-bin.zip
+export TOMCAT_DOWNLOAD_PATH=https://maven.brisskit.le.ac.uk:443/nexus/content/repositories/thirdparty/apache/tomcat/apache-tomcat/6.0.35/apache-tomcat-6.0.35.zip
+export ONYX_DOWNLOAD_PATH=https://maven.brisskit.le.ac.uk:443/nexus/content/repositories/thirdparty/onyx/brisskit-onyx-demo/1.8.1/brisskit-onyx-demo-1.8.1-apptlistfix.war
+export ONYX_INTEGRATION_WS_DOWNLOAD_PATH=https://maven.brisskit.le.ac.uk:443/nexus/content/repositories/releases/org/brisskit/app/onyx/onyxWS/1.0-RC1/onyxWS-1.0-RC1.war
+export ONYX_PROCEDURES_DOWNLOAD_PATH=https://maven.brisskit.le.ac.uk:443/nexus/content/repositories/releases/org/brisskit/app/onyx/onyx-admin-procedures/1.0-RC1-development/onyx-admin-procedures-1.0-RC1-development.zip
 
 # Final install names for Onyx war and Onyx instegration service war files
 # This is the simplest way of getting the url context to be,
